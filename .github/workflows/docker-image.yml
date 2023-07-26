@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag denobraz/docker-php-composer-node-npm:$(date +%s)
       
     - name: Docker Push
-      run: docker push denobraz/docker-php-composer-node-npm
+      run: docker push denobraz/docker-php-composer-node-npm:latest
